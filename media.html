@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediaQuires</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        h1{
+            margin: 50px 0;
+            text-align: center;
+            text-transform: capitalize;
+        }
+        .parent{
+            height: 50vh;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+            box-sizing: border-box;
+           
+        }
+        .daughter{
+            width: 50%;
+            padding: 0;
+            text-align: center;
+        }
+        .daughter img{
+            width: 450px;
+            border-radius: 20px;
+        }
+        .daughter a{
+            text-align: center;
+        }
+        .son{
+            width: 50%;
+            padding: 0 5%;
+            box-sizing: border-box;
+            text-align: justify;
+            line-height: 1.7;
+        }
+ /* .........................mediaquires................... */
+
+ /* .........................Desktop & Laptop................... */
+ @media(min-width:1024px){
+     h1{
+         color: green;
+     }
+    .parent p{
+        color: chocolate;
+        word-spacing: 20px;
+    }
+ }
+
+ /* .........................Tablets and ipads................... */
+ @media (min-width:769px) and (max-width:1023px){
+     h1{
+         color: indigo;
+         text-transform: uppercase;
+     }
+
+ }
+
+ /* .........................Mobiles Phones................... */
+@media(max-width:768px){
+    h1{
+        color: brown;
+    }
+    .parent{
+
+            display: block;
+
+        }
+        .daughter{
+            width: 100%;
+
+        }
+        .son{
+            width: 100%;
+
+        }
+
+        .daughter img{
+            width: 100%;
+            height: auto;
+
+        }
+
+}
+@media(max-width:468px){
+    .daughter img{
+          padding: 10%;
+          box-sizing: border-box;
+
+        }
+}
+
+    </style>
+
+</head>
+
+<body>
+    <h1>Welcome To My Company Responsive Website</h1>
+    <br>
+    <div class="parent">
+        <br>
+        <div class="son">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque rem necessitatibus nihil beatae quam quasi
+                id aliquid corrupti iusto maiores ducimus ab possimus, sint ut consequuntur libero facilis nesciunt alias.
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque rem necessitatibus nihil beatae quam quasi
+                id aliquid corrupti iusto maiores ducimus ab possimus, sint ut consequuntur libero facilis nesciunt alias.
+            </p>
+        </div>
+        <br>
+        <div class="daughter">
+            <a href="#"><img src="a.jfif"></a>   
+        </div>
+    </div>
+
+</body>
+
+</html>
